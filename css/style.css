@@ -1,0 +1,206 @@
+:root {
+  --color-brand: #2196f3;
+  --color-text: #212121;
+  --color-cap-text: #f5f5f5;
+  --color-second-text: #757575;
+  --background-premiori: #2f303a;
+  --background-white: #ffffff;
+  --background-gray: #f5f4fa;
+  --color-white-text: #ffffff;
+  --card-comand: rgba(255, 255, 255, 1);
+  --button: rgba(33, 150, 243, 1);
+}
+
+body {
+  color: var(--color-text);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.link:hover,
+.link:focus {
+  color: rgba(33, 150, 243, 1);
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+img {
+  display: block;
+}
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+/* --------common styles----------- */
+.btn {
+  background-color: var(--color-brand);
+  color: rgba(255, 255, 255, 1);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: none;
+}
+.btn:hover,
+.btn:focus {
+  background-color: #188ce8;
+}
+
+/* -------------header------------- */
+.header-nav {
+  color: var(--background-white);
+  background-color: var(--background-white);
+  font-family: inherit;
+
+  
+}
+.logo {
+  color: var(--color-brand);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.logo-blac {
+  color: #000000;
+}
+.header-link {
+  color: rgba(33, 33, 33, 1);
+  font-weight: 500;
+  font-family: inherit;
+}
+
+/* ----------hero---------- */
+.hero {
+  background-color: var(--background-premiori);
+}
+.hero-title {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+/* ----------Features---------- */
+/* visually-hidden */
+.Features-titel { 
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.Features-subtitel {
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.Features-text {
+  color: var(--color-second-text);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/* <!------------ workers -------------> */
+.workers-titel {
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* <!------------ team -------------> */
+.team-titel {
+color: var(--color-text);
+font-weight: 700;
+font-size: 36px;
+line-height: calc(42 / 36);
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--color-text);
+}
+.team-subtitel {
+  color: var(--color-text);
+  font-size: 16px;
+  line-height: 1.2;
+  
+  letter-spacing: 0.03em;
+}
+.team-subtitel {
+  background-color: var(--card-comand);
+}
+
+/*  <!------------footer ------------> */
+.footer {
+  background-color: var(--background-premiori);
+}
+.logo-whayte {
+  color: #FFFFFF;
+}
+.footer-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
