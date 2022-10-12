@@ -7,7 +7,7 @@
   --background-white: #ffffff;
   --background-gray: #f5f4fa;
   --color-white-text: #ffffff;
-  --card-comand: rgba(255, 255, 255, 1);
+  --card-background: rgba(255, 255, 255, 1);
   --button: rgba(33, 150, 243, 1);
 }
 
@@ -114,8 +114,8 @@ img {
 }
 
 /* ----------Features---------- */
-/* visually-hidden */
-.Features-titel { 
+/* portfolio-titel */
+.visually-hidden { 
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -169,8 +169,9 @@ color: var(--color-text);
   
   letter-spacing: 0.03em;
 }
-.team-subtitel {
-  background-color: var(--card-comand);
+/*-------- background team card ---------*/
+.team-background {
+  background-color: var(--card-background);
 }
 
 /*  <!------------footer ------------> */
@@ -188,8 +189,33 @@ color: var(--color-text);
   font-style: normal;
 }
 
+/* ------------Portfolio------------ */
 
+.btn-filters-list {
+  margin-bottom: 50px;
+}
+.background-portfolio {
+  background-color: var(--card-background);
+}
+.Portfolio-img {
 
+}
+.portfolio-sabtitel {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+
+color: var(--color-text);
+}
+.Portfolio-text {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+}
+.Portfolio-list {
+  margin: 94px auto;
+}
 
 
 
