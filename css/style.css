@@ -73,8 +73,13 @@ img {
 .btn:focus {
   background-color: #188ce8;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /* -------------header------------- */
+
 .header-nav {
   color: var(--background-white);
   background-color: var(--background-white);
@@ -86,10 +91,23 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  margin-right: 93px;
 }
 .logo-blac {
   color: #000000;
 }
+.header > .container {
+  display: flex;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+  margin-left: auto;
+}
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-link {
   color: rgba(33, 33, 33, 1);
   font-weight: 500;
@@ -110,6 +128,12 @@ img {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
+.hero-btn {
+  min-width: 216px;
+  height: 50px;
+  margin: 30px auto 0;
+  display: block;
+}
 
 /* ----------Features---------- */
 /* portfolio-titel */
@@ -125,15 +149,22 @@ img {
   clip-path: inset(50%);
   margin: -1px;
 }
-.Features-subtitel {
+.features-list {
+  display: flex;
+}
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+.features-subtitel {
   color: var(--color-text);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
-.Features-text {
+.features-text {
   color: var(--color-second-text);
   font-size: 14px;
   line-height: 1.7;
@@ -145,9 +176,16 @@ img {
   color: var(--color-text);
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.2;
+  line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.workers-list {
+  display: flex;
+}
+.workers-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* ------------ team ------------ */
@@ -158,14 +196,28 @@ img {
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--color-text);
+  margin-bottom: 50px;
 }
+.team-list {
+  display: flex;
+}
+
 .team-subtitel {
   color: var(--color-text);
   font-size: 16px;
   line-height: 1.2;
-
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.team-img {
+  margin-bottom: 30px;
+}
+.team-item {
+  padding-bottom: 30px;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 /*-------- background team card ---------*/
 .team-background {
@@ -175,7 +227,10 @@ img {
 /*  ------------footer ------------ */
 .footer {
   background-color: var(--background-premiori);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+
 .logo-whayte {
   color: #ffffff;
 }
@@ -202,12 +257,11 @@ img {
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
 }
-.Portfolio-text {
+.portfolio-text {
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
 }
-.Portfolio-list {
+.portfolio-list {
   margin: 94px auto;
 }
-/* hfddskh */
