@@ -151,10 +151,11 @@ img {
 }
 .features-list {
   display: flex;
+  gap: 30px;
 }
-.features-item:not(:last-child) {
+/* .features-item:not(:last-child) {
   margin-right: 30px;
-}
+} */
 .features-subtitel {
   color: var(--color-text);
   font-weight: 700;
@@ -183,9 +184,13 @@ img {
 }
 .workers-list {
   display: flex;
+  gap: 30px;
 }
-.workers-item:not(:last-child) {
+/* .workers-item:not(:last-child) {
   margin-right: 30px;
+} */
+.workers-item {
+  width: 370px;
 }
 
 /* ------------ team ------------ */
@@ -200,6 +205,7 @@ img {
 }
 .team-list {
   display: flex;
+  gap: 30px;
 }
 
 .team-subtitel {
@@ -214,11 +220,12 @@ img {
   margin-bottom: 30px;
 }
 .team-item {
+  width: 270px;
   padding-bottom: 30px;
 }
-.team-item:not(:last-child) {
+/* .team-item:not(:last-child) {
   margin-right: 30px;
-}
+} */
 /*-------- background team card ---------*/
 .team-background {
   background-color: var(--card-background);
@@ -244,11 +251,28 @@ img {
 
 /* ------------Portfolio------------ */
 
+.btn-filters {
+  color: #212121;
+  background-color: #F5F4FA;;
+  border-radius: 4px;
+}
 .btn-filters-list {
   margin-bottom: 50px;
+  display: flex;
+  /* gap: 8px; */
+  justify-content: center;
+}
+.btn-filters-item:not(:last-child) {
+margin-right: 8px;
 }
 .background-portfolio {
+  width: 370px;
   background-color: var(--card-background);
+}
+.portfolio-card-border {
+    padding: 20px 24px;
+    border: 1px solid rgba(238, 238, 238, 1);
+    border-top: none;
 }
 .portfolio-sabtitel {
   color: var(--color-text);
@@ -263,5 +287,9 @@ img {
   letter-spacing: 0.03em;
 }
 .portfolio-list {
-  margin: 94px auto;
+  width: 1170;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top:34px ;
 }
