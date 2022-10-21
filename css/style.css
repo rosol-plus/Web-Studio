@@ -50,7 +50,7 @@ img {
   width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 /* --------common styles----------- */
@@ -79,7 +79,11 @@ img {
 }
 
 /* -------------header------------- */
-
+.header {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
 .header-nav {
   color: var(--background-white);
   background-color: var(--background-white);
@@ -92,6 +96,7 @@ img {
   font-size: 26px;
   line-height: 1.2;
   margin-right: 93px;
+
 }
 .logo-blac {
   color: #000000;
@@ -165,7 +170,10 @@ img {
   margin: -1px;
 }
 .features-img {
+  display: flex;
   margin-bottom: 55px;
+  align-content: center;
+  justify-content: center;
   }
 /* .bg-feeatures {
   background-color: #F5F4FA;
@@ -232,6 +240,15 @@ img {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
+.team-text {
+  color: var(--color-second-text);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 16px;
+}
 .team-list {
   display: flex;
   gap: 30px;
@@ -249,19 +266,29 @@ img {
   margin-bottom: 10px;
 }
 
-.team-img {
-  
+.cocials-list-team {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.cocials-icon-team {
+fill: #AFB1B8;
+}
+
+.cocials-link:hover .cocials-icon-team {
+fill: #ffffff;
 }
 .team-item {
   width: 270px;
-  
 }
-/* .team-item:not(:last-child) {
-  margin-right: 30px;
-} */
+
 /*-------- background team card ---------*/
 .team-background {
   background-color: var(--card-background);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 /* ------------client------------ */
 .client-titel {
@@ -295,7 +322,7 @@ img {
   letter-spacing: 0.03em;
   font-style: normal;
 }
-.socials-titel {
+.cocials-titel {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -304,18 +331,18 @@ img {
   color: #FFFFFF;
   margin-bottom: 32px;
 }
-.socials-list {
+.cocials-list {
   display: flex;
   gap: 10px;
   
 }
-.socials-icon-item {
+.cocials-icon-item {
   width: 44px;
   height: 44px;
   
 }
-.socials-icon-item :hover,
-.socials-icon-item :focus {
+.cocials-icon-item :hover,
+.cocials-icon-item :focus {
   background-color: #2196F3;
 }
 .cocials-link {
@@ -329,8 +356,10 @@ img {
 }
 .footer-wrap {
   display: flex;
- 
   gap: 70px;
+}
+.cocials-icon-footer {
+  fill: #FFFFFF;
 }
 
 /* ------------Portfolio------------ */
