@@ -127,10 +127,32 @@ img {
 }
 
 .header-link {
+  font-weight: 500;
+  font-family: inherit;
+  
+}
+.header-link-accent {
+  position: relative;
   color: rgba(33, 33, 33, 1);
   font-weight: 500;
   font-family: inherit;
 }
+
+.header-link-accent-carent::after {
+  content: "";
+
+  position: absolute;
+  bottom: -34px;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+
+  background-color: #2196f3;
+  border-radius: 2px;
+}
+
 .header-link-contact {
   color: var(--color-second-text);
   display: inline-flex;
