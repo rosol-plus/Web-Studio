@@ -15,12 +15,12 @@
   </head>
 
   <body>
-    <!------------ header ------------->
+    <!------------ HEADER ------------->
     <header class="header">
       <div class="container">
         <a class="link logo" href="/"
-          >Web<span class="logo-blac">Studio</span></a
-        >
+            >Web<span class="logo-blac">Studio</span></a
+          >
         <nav class="header-nav">
           <ul class="list header-list">
             <li class="header-item">
@@ -36,26 +36,29 @@
         </nav>
         <ul class="list header-list">
           <li class="header-item">
-            <a class="link header-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+            <a class="link header-link header-link-contact" href="mailto:info@devstudio.com">
+              <svg class="header-link-icon" width="16" height="12" >
+                <use href="./images/sprite.svg#icon-mail"></use>
+             </svg> info@devstudio.com</a>
           </li>
           <li class="header-item">
-            <a class="link header-link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
+            <a class="link header-link header-link-contact" href="tel:+380961111111"
+              ><svg class="header-link-icon" width="10" height="16" >
+                <use href="./images/sprite.svg#icon-smartphone"></use>
+             </svg>+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
     </header>
-
+    
+    <!------------ MAIN ------------->  
     <main>
-      <!------------ hero ------------->
+      <!------------ Hero ------------->
       <section class="section hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для<br />вашого бізнесу</h1>
 
-          <button class="btn hero-btn" type="button">Замовити послугу</button>
+          <button class="btn hero-btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!------------ Features ------------->
@@ -115,26 +118,26 @@
           </ul>
         </div>
       </section>
-      <!------------ workers ------------->
+      <!------------ Workers ------------->
       <section class="section workers">
         <div class="container">
           <h2 class="workers-titel">Чим ми займаємося</h2>
           <ul class="list workers-list">
-            <li class="workers-item">
+            <li class="workers-item" data-application="Десктопні додатки">
               <img
                 src="./images/workers/box1.jpg"
                 alt="процес роботи над версткою коду сторінки"
                 width="370"
               />
             </li>
-            <li class="workers-item">
+            <li class="workers-item" data-application="Мобільні додатки">
               <img
                 src="./images/workers/box2.jpg"
                 alt="процес роботи над оформленням сторінки"
                 width="370"
               />
             </li>
-            <li class="workers-item">
+            <li class="workers-item" data-application="Дизайнерські рішення">
               <img
                 src="./images/workers/box3.jpg"
                 alt="процес роботи над дизайном сторінки"
@@ -144,7 +147,7 @@
           </ul>
         </div>
       </section>
-      <!------------ team ------------->
+      <!------------ Team ------------->
       <section class="section team">
         <div class="container">
           <h2 class="team-titel">Наша команда</h2>
@@ -308,6 +311,7 @@
           </ul>
         </div>
       </section>
+      <!------------ Client ------------->
       <section class="section client">
         <div class="container">
           <h2 class="client-titel">Постійні клієнти</h2>
@@ -360,7 +364,7 @@
       </section>
     </main>
 
-    <!------------footer ------------>
+    <!------------FOOTER ------------>
 
     <footer class="footer">
       <div class="container">
@@ -427,5 +431,15 @@
         </div>
       </div>
     </footer>
+
+     <!--====== Nodal window ======-->
+     <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>X</button>
+      </div>
+     </div>
+
+     <!--=========== SCRIPT ===========-->
+     <script src="./js/modal.js"></script>
   </body>
 </html>
